@@ -1,7 +1,6 @@
-import React,{useRef} from "react";
+import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
-
 
 const contact = () => {
   const form = useRef();
@@ -11,10 +10,10 @@ const contact = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_tgmm9sg",
+        "template_n4hup73",
         form.current,
-        "YOUR_USER_ID"
+        "razk32eIzPKzK1Tz5"
       )
       .then(
         (result) => {
@@ -25,7 +24,7 @@ const contact = () => {
         }
       );
   };
-  
+
   return (
     <section className="contact container section" id="contact">
       <h2 className="section_title"> Contact </h2>
@@ -75,7 +74,10 @@ const contact = () => {
               ></textarea>
             </div>
 
-            <button type="submit" className="btn"> Send Message </button>
+            <button type="submit" className="btn">
+              {" "}
+              Send Message{" "}
+            </button>
           </div>
         </form>
       </div>
