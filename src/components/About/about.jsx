@@ -19,7 +19,10 @@ const about = () => {
               experience with a few web projects in ui/ux design and web site
               building.
             </p>
-            <a href="" className="btn">
+            <a
+              href="https://drive.google.com/uc?id=1D12WuxKKQ8LUwd-AaosnTtPmiKQeaNO9&export=download"
+              className="btn"
+            >
               {" "}
               Download Resume{" "}
             </a>

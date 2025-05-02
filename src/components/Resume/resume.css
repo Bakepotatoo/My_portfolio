@@ -82,6 +82,11 @@
     justify-content: center;
     row-gap: 1.875rem;
   }
+
+  .timeline_text1 {
+    left: 8.5rem;
+    top: 5.875rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -100,7 +105,6 @@
     left: 8.5rem;
     top: 7rem;
   }
-
 }
 
 @media screen and (max-width: 350px) {

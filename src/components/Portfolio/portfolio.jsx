@@ -36,7 +36,7 @@ const portfolio = () => {
 
       <div className="work_container grid">
         {items.map((elem) => {
-          const { id, image, title, category } = elem;
+          const { id, image, title, category, link } = elem;
           return (
             <div className="work_card" key={id}>
               <div className="work_thumbnail">
@@ -46,10 +46,7 @@ const portfolio = () => {
 
               <span className="work_category">{category}</span>
               <h3 className="work_title">{title}</h3>
-              <a
-                href="https://www.figma.com/proto/MjD2EIbAqfzppFkmYOK0j0/Roommate-Matchmaker-Website-prototype?node-id=2-2&starting-point-node-id=2%3A2"
-                className="work_button"
-              >
+              <a href={link} className="work_button">
                 <i className="icon-link work_button-icon"></i>
               </a>
             </div>
